@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 
 const App = () => {
-  const [noPosition, setNoPosition] = useState({x:230,y:454});
+  const [noPosition, setNoPosition] = useState({x:800,y:499});
   const moveNO = (e) => {
     let clientX, clientY;
     if (e.touches) {
@@ -40,13 +40,12 @@ const App = () => {
   }
   return (
     <div className='flex justify-center items-center'>
-      <div className='bg-pink-200 w-[360px] h-[640px]  text-center  relative border rounded-lg flex flex-col justify-center items-center gap-10 '>
+      <div className='bg-pink-200 w-[100vw] h-[100vh]  text-center  relative border rounded-lg flex flex-col justify-center items-center gap-10  onTouchStart={moveNo}'>
         <img src={image.image6} alt='couple' className='w-[200px] h-[200px] rounded-full'/>
         <div className='text-2xl font-black'>Do you love me?</div>
         <div className='flex gap-4 text-lg font-bold'>
           <button onClick={handleyes}className='bg-blue-500 text-white px-4 py-2 rounded'>YES</button>
           <button onMouseEnter={moveNO}
-            onTouchMove={moveNO}
             style={{
             position:"absolute",
             left:noPosition.x,
