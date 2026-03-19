@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 
 const App = () => {
-  const [noPosition, setNoPosition] = useState({x:800,y:499});
+  const [noPosition, setNoPosition] = useState({x:0,y:0});
   const moveNO = (e) => {
     let clientX, clientY;
     if (e.touches) {
