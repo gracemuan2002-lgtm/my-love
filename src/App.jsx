@@ -32,7 +32,7 @@ const App = () => {
   const handleyes = () => {
     const name = prompt("Enter your name:");
     if(name){
-      alert(`WELCOME ${name}! KEI NANG A HING TULEH A TAWN TUNG IN `);
+      alert(`Congratulations ${name}! WELCOME TO MY HEART `);
     }else{
       alert("Please enter your name!");
     }
@@ -40,7 +40,7 @@ const App = () => {
   }
   return (
     <div className='flex justify-center items-center'>
-      <div className='bg-pink-200 w-[100vw] h-[100vh]  text-center  relative border rounded-lg flex flex-col justify-center items-center gap-10  onTouchStart={moveNo}'>
+      <div className='bg-pink-200 w-screen h-screen  text-center  relative border rounded-lg flex flex-col justify-center items-center gap-10  onTouchStart={moveNo}'>      
         <img src={image.image6} alt='couple' className='w-[200px] h-[200px] rounded-full'/>
         <div className='text-2xl font-black'>Do you love me?</div>
         <div className='flex gap-4 text-lg font-bold'>
@@ -49,7 +49,8 @@ const App = () => {
             style={{
             position:"absolute",
             left:noPosition.x,
-            top:noPosition.y
+            top:noPosition.y,
+            transition:"all 0.15s ease"
           }} className='bg-red-500 text-white px-4 py-2 rounded'>NO</button>
         </div>
       </div>
