@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 
 const App = () => {
-  const [noPosition, setNoPosition] = useState({x:0,y:0});
+  const [noPosition, setNoPosition] = useState({x:100,y:100});
   const moveNO = (e) => {
     let clientX, clientY;
     if (e.touches) {
@@ -46,8 +46,8 @@ const App = () => {
         <div className='flex gap-4 text-lg font-bold'>
           <button onClick={handleyes}className='bg-blue-500 text-white px-4 py-2 rounded'>YES</button>
           <button onMouseEnter={moveNO}
-            onTouchStart={moveNo}
-            onClick={moveNo}
+            onTouchStart={moveNO}
+            onClick={moveNO}
             style={{
             position:"absolute",
             left:noPosition.x,
