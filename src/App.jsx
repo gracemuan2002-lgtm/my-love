@@ -41,7 +41,7 @@ const App = () => {
   return (
     <div className='flex justify-center items-center'>
       <div className='bg-pink-200 w-screen h-screen  text-center  relative border rounded-lg flex flex-col justify-center items-center gap-10  '>      
-        <img src={image.image6} alt='couple' className='w-[200px] h-[200px] rounded-full'/>
+        <img src={image.image4} alt='couple' className='w-[200px] h-[200px] rounded-full'/>
         <h2 className='text-2x1 font-black'>(yes) or(No) tawh hong dawng ve maw, lungdam .</h2>
         <div className='text-2xl font-black'>Do you love me?</div>
         <div className='flex gap-4 text-lg font-bold'>
