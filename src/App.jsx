@@ -55,6 +55,7 @@ const App = () => {
             top:noPosition.y,
             transition:"all 0.15s ease"
           }} className='bg-red-500 text-white px-4 py-2 rounded'>NO</button>
+          <audio controls><source src={image.audio1} type="audio/mpeg" /></audio>
         </div>
       </div>
       
