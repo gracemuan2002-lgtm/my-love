@@ -32,7 +32,7 @@ const App = () => {
   const handleyes = () => {
     const name = prompt("Enter your name:");
     if(name){
-      alert(`Congratulations ${name}! WELCOME TO MY HEART `);
+      alert(`Congratulations ${name}! WELCOME TO MY BaBy! I love you so much!`);
     }else{
       alert("Please enter your name!");
     }
